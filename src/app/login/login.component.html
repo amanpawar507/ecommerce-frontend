@@ -3,15 +3,15 @@
 
 <h4 style="margin-left: 45%; margin-top: 50px;">Login to Fam cart</h4>
 
-<form action="/action_page.php" method="post">
+<form (ngSubmit)="loginCustomer()">
  
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" [(ngModel)]="user.username" placeholder="Enter Username" name="username" required id="username">
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" [(ngModel)]="user.password" placeholder="Enter Password" name="password" required id="password">
         
     <button type="submit">Login</button>
     <label>
@@ -20,7 +20,7 @@
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+    <button (click)="homeRedirect()" type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>

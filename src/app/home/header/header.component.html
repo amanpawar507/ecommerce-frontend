@@ -1,9 +1,13 @@
 <header>
     <div class="navbar navbar-dark bg-primary shadow-sm">
         <div class="navbar-brand align-item-center d-flex">
-            <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;
+            <button (click)="homeRedirect()" class="btn btn-primary">
+                <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;
+                </i>
+            </button>
+            
                 
-            </i>
+           
             <strong  style="font-size: 30px"> Fam cart </strong>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="search products">
@@ -12,14 +16,17 @@
 
 
         </div>
-        <button class="btn btn-primary">
+        <button (click)="cartRedirect()" class="btn btn-primary">
             <i style= "font-size: 30px;" class="fas fa-cart-plus cart-butt"></i>
-            <div style="font-size: 10px;" class="badge bg-danger notif-red">5</div>
             <p class="cart-name">Cart</p>
         </button>
-        <button class="btn btn-primary">
+        <button (click)="loginRedirect()" class="btn btn-primary">
             <i style= "font-size: 25px;" class="fas fa-user user-butt"></i>
             <p class="user-name">Login</p>
+        </button>
+        <button (click)="profileRedirect()" class="btn btn-primary">
+            <i style= "font-size: 25px;" class="fas fa-user-1 user-butt"></i>
+            <p class="user-profile">Profile</p>
         </button>
     </div>
 </header>

@@ -1,0 +1,34 @@
+<!-- user-info.component.html -->
+<div class=""></div>
+<div *ngIf="user" class="user-info">
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <p id="username">{{ user.username }}</p>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <p id="email">{{ user.email }}</p>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">First Name:</label>
+    <p id="firstName">{{ user.firstName }}</p>
+  </div>
+
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+    <p id="lastName">{{ user.lastName }}</p>
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <p id="gender">{{ user.gender }}</p>
+  </div>
+
+  <!-- Add additional form fields for other user information as needed -->
+
+  <div class="form-group">
+    <button class="btn btn-primary" >Edit</button>
+  </div>
+</div>

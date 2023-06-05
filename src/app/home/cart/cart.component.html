@@ -1,9 +1,45 @@
-<div class="container">
-
-    <div class="center">
-        <img src="" alt="">
-        <h4>Your Cart is empty!</h4>
-        <h6>Add Items to your cart</h6>
-        <button class="btn btn-primary">Shop now</button>
+<ng-container *ngIf="true">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="">
+                            <th>Sr. No</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td>1.</td>
+                            <td>Iphone 15 Pro</td>
+                            <td>Product Image</td>
+                            <td>iPhone 15 Pro. boasts an advanced dual-camera</td>
+                            <td>$1000</td>
+                            <td>2</td>
+                            <td>$2000</td>
+                            <td><button class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-</div>
+</ng-container>
+
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="center">
+            <img src="" alt="">
+            <h4>Your Cart is empty!</h4>
+            <h6>Add Items to your cart</h6>
+            <button (click)="homeRedirect()" class="btn btn-primary">Shop now</button>
+        </div>
+    </div>
+</ng-container>
