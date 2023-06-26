@@ -1,4 +1,4 @@
-# Ecommerce Frontend in Angular 14 & Typescript
+# Ecommerce Frontend in Angular & Typescript
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
